@@ -8,9 +8,9 @@ private:
 	string name;
 
 public:
-	virtual string getAnimalType();
-	string getName();
-	void setName(string name);
-	virtual void makeNoise();
+	virtual inline string getAnimalType() = 0;
+	string inline getName();
+	void inline setName(string name);
+	virtual void inline makeNoise() = 0;
 
 };
